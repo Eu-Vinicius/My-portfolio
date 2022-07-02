@@ -29,6 +29,7 @@ a{
     background-size: cover;
     background-position: top center;
     position: relative;
+    z-index: 1;
 }
 #Presentation h1{
     display: block;
@@ -54,4 +55,22 @@ a{
     color: white;
     font-weight: 500;
     background-color: gold;
+}
+#Presentation h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+#Presentation::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
 }
