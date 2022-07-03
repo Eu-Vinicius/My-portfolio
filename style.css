@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,500;1,700&display=swap');
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -33,6 +33,7 @@ a{
     position: relative;
     z-index: 1;
 }
+
 #Presentation h1{
     display: block;
     width: fit-content;
@@ -42,6 +43,9 @@ a{
     animation: Text_Reveal .5 ease forwards;
     animation-delay: 1.5s;
 }
+
+/* Animações do h1 */
+
 #Presentation h1:nth-child(1){
     animation-delay: .8s;
 }
@@ -70,6 +74,7 @@ a{
     font-weight: 500;
     background-color: gold;
 }
+
 #Presentation h1 span{
     position: absolute;
     top: 0;
@@ -80,6 +85,9 @@ a{
     animation-delay: .5s;
     background-color: gold;
 }
+
+/* Animações do span */
+
 #Presentation h1:nth-child(1) span{
     animation-delay: .5s;
 }
@@ -89,6 +97,7 @@ a{
 #Presentation h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
+
 #Presentation::after{
     content: '';
     position: absolute;
