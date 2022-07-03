@@ -16,7 +16,7 @@ a{
     text-decoration: none;
 }
 
-.PresentationContainer{
+.mainContainer{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -36,7 +36,18 @@ a{
     width: fit-content;
     font-size: 5rem;
     position: relative;
-    color: white;
+    color: transparent;
+    animation: Text_Reveal .5 ease forwards;
+    animation-delay: 1.5s;
+}
+#Presentation h1:nth-child(1){
+    animation-delay: .8s;
+}
+#Presentation h1:nth-child(2){
+    animation-delay: 1.8s;
+}
+#Presentation h1:nth-child(3){
+    animation-delay: 2.8s;
 }
 
 #Presentation .CTA{
@@ -61,7 +72,19 @@ a{
     top: 0;
     left: 0;
     height:100%;
-    width: 100%;
+    width: 0%;
+    animation: Text_Reveal_Box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
+}
+#Presentation h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#Presentation h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#Presentation h1:nth-child(3) span{
+    animation-delay: 2.5s;
 }
 #Presentation::after{
     content: '';
@@ -73,4 +96,23 @@ a{
     background-color: black;
     opacity: 0.5;
     z-index: -1;
+}
+
+/* Keyframes */
+
+@keyframes Text_Reveal{
+    100%{
+        color: white;
+    }
+}
+
+@keyframes Text_Reveal_Box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%
+    }
 }
