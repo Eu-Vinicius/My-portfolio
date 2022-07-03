@@ -24,6 +24,8 @@ a{
     justify-content: center;
 }
 
+/* Seção de apresentação */
+
 #Presentation{
     background-image: url(/Imagens/background.jpeg);
     background-size: cover;
@@ -47,6 +49,7 @@ a{
     animation-delay: 1.8s;
 }
 #Presentation h1:nth-child(3){
+    animation: Text_Reveal_Name .5s ease forwards;
     animation-delay: 2.8s;
 }
 
@@ -106,6 +109,12 @@ a{
     }
 }
 
+@keyframes Text_Reveal_Name{
+    100%{
+        color: gold;
+        font-weight: 500px;
+    }
+}
 @keyframes Text_Reveal_Box{
     50%{
         width: 100%;
