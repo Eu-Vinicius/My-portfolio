@@ -16,6 +16,16 @@ a{
     text-decoration: none;
 }
 
+.section-Title{
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
 .headerContainer{
     min-height: 100vh;
     width: 100%;
