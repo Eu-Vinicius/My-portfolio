@@ -112,6 +112,14 @@ a{
     z-index: -1;
 }
 
+/* Seção de Portfolio */
+
+#portfolio .portfolio{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 /* Keyframes */
 
 @keyframes Text_Reveal{
