@@ -15,12 +15,25 @@ html{
 a{
     text-decoration: none;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
 .section-Title{
     font-size: 4rem;
     font-weight: 500;
     color: black;
     margin-bottom: 10px;
+    margin-top: 40px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
