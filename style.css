@@ -238,3 +238,24 @@ p{
         left: 100%
     }
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px){
+    #portfolio .projectItem{
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .allProjects .projectInfo{
+        height: 100%
+    }
+    #portfolio .allProjects .projectPhoto{
+        height: 100%
+    }
+    #portfolio .projectItem:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
