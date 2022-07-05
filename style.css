@@ -163,7 +163,7 @@ p{
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }
 
@@ -186,6 +186,7 @@ p{
 #portfolio .projectInfo h2{
     font-size: 1.8rem;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 #portfolio .projectPhoto{
