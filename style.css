@@ -51,7 +51,7 @@ p{
 /* Seção de apresentação */
 
 #Presentation{
-    background-image: url(/Imagens/background.jpeg);
+    background-image: url(https://raw.githubusercontent.com/Eu-Vinicius/My-portfolio/18fa3ec85d6357e3c938b48307c1d8c572b066f2/Imagens/background.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
